@@ -1,6 +1,8 @@
 const months = [31,28,31,30,31,30,31,31,30,31,30,31];
 
 function calculate(){
+    let result = document.querySelector(".result");
+    let displyAge = document.querySelector(".display-age");
     let today = new Date();
     let inputDate = new Date(document.getElementById("date-input").value);
     let birthMonth , birthDate , birthYear;
@@ -46,6 +48,9 @@ function calculate(){
             }
         }
         displayResult(birthDate , birthMonth , birthYear);
+        displyAge.style.display = "block";
+        console.log(birthYear)
+        result.innerHTML = "Your Age today is : " + birthYear;
 }
 
 function displayResult(bdate,bmonth,byear){

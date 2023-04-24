@@ -112,3 +112,15 @@ p{
     color: #707070;
     font-weight: 400;
 }
+
+.display-age{
+    display: none;
+    margin-top: 37px;
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.display-age p{
+    font-size: 20px;
+    color: #665e5e;
+}
